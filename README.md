@@ -1,5 +1,93 @@
 # Vehicle Engine Health Preditcion
-Used 6 models - ANN, CNN, LSTM, Transformer-based, GNN and GRU. Each model was evaluated on 10 metrics - (Accuracy, Precision, Recall (Sensitivity), F1-Score, AUC-ROC, Log Loss (Cross-Entropy Loss), Cohen’s Kappa, Confusion Matrix, Mean Squared Error (MSE)) and the results were compared.
+# Model Evaluation and Comparison
+
+In this project, we implemented and evaluated six different deep learning architectures on our dataset. Our goal was to compare their performance across a comprehensive set of evaluation metrics and understand the strengths and weaknesses of each approach.
+
+## Models Implemented
+
+1. **Artificial Neural Network (ANN):**  
+   A traditional fully-connected network serving as a baseline.
+
+2. **Convolutional Neural Network (CNN):**  
+   Utilizes convolutional layers to capture spatial hierarchies in the data.
+
+3. **Long Short-Term Memory (LSTM):**  
+   A type of recurrent neural network (RNN) that excels at modeling sequential data and long-term dependencies.
+
+4. **Transformer-based Model:**  
+   Leverages attention mechanisms to capture complex relationships in the data without relying on recurrent structures.
+
+5. **Graph Neural Network (GNN):**  
+   Designed to operate on graph-structured data, this model captures relationships between entities effectively.
+
+6. **Gated Recurrent Unit (GRU):**  
+   A streamlined alternative to LSTM that provides competitive performance with fewer parameters.
+
+## Evaluation Metrics
+
+Each model was evaluated using the following metrics:
+
+- **Accuracy:**  
+  Measures the overall correctness of the predictions.
+
+- **Precision:**  
+  The ratio of true positive predictions to the total predicted positives, indicating the model's exactness.
+
+- **Recall (Sensitivity):**  
+  The ratio of true positives to the actual positives, reflecting the model's ability to capture all relevant instances.
+
+- **F1-Score:**  
+  The harmonic mean of precision and recall, providing a balance between the two.
+
+- **AUC-ROC:**  
+  The Area Under the Receiver Operating Characteristic curve, representing the model’s ability to distinguish between classes.
+
+- **Log Loss (Cross-Entropy Loss):**  
+  Measures the uncertainty of predictions by penalizing false classifications.
+
+- **Cohen’s Kappa:**  
+  Evaluates the agreement between the predicted and actual labels, correcting for chance agreement.
+
+- **Confusion Matrix:**  
+  A table that summarizes the performance of the model by showing the correct and incorrect predictions for each class.
+
+- **Mean Squared Error (MSE):**  
+  The average of the squared differences between predicted and actual values, primarily used for regression tasks.
+
+*Note: While these nine metrics are detailed here, additional evaluations or custom metrics may be included in supplementary documentation.*
+
+## Experimental Results
+
+The models were compared based on the metrics above. A brief summary of the findings is as follows:
+
+- **ANN:**  
+  Served as a strong baseline, achieving competitive accuracy; however, its ability to capture complex data patterns was limited.
+
+- **CNN:**  
+  Demonstrated excellent performance in extracting spatial features, which resulted in improved precision and recall for tasks where such features were prominent.
+
+- **LSTM:**  
+  Excelled in handling sequential dependencies, significantly enhancing recall and F1-score for time-series or sequential data.
+
+- **Transformer-based Model:**  
+  Outperformed traditional recurrent models in capturing long-range dependencies, as evidenced by superior AUC-ROC and lower log loss values.
+
+- **GNN:**  
+  Showed promising results by leveraging relational structures within the data, particularly reflected in improved Cohen’s Kappa and detailed insights from the confusion matrix.
+
+- **GRU:**  
+  Struck a balance between computational efficiency and performance, delivering competitive results across most evaluation metrics.
+
+For detailed numerical results, visualizations, and further analysis, please refer to the `results/` directory and the accompanying documentation in this repository.
+
+## Conclusion
+
+This comparative study highlights the diverse strengths and trade-offs of each deep learning architecture. The evaluation across multiple metrics provides a nuanced understanding of model performance, informing future improvements and potential hybrid approaches. We welcome feedback and discussion to further enhance this work.
+
+---
+
+Feel free to explore the repository and reach out with any questions or suggestions!
+
 
 # Dataset Features Summary
 
