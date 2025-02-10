@@ -20,9 +20,6 @@ In this project, we implemented and evaluated six different deep learning archit
 5. **Graph Neural Network (GNN):**  
    Designed to operate on graph-structured data, this model captures relationships between entities effectively.
 
-6. **Gated Recurrent Unit (GRU):**  
-   A streamlined alternative to LSTM that provides competitive performance with fewer parameters.
-
 ## Evaluation Metrics
 
 Each model was evaluated using the following metrics:
